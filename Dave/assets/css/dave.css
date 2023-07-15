@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css2? family= GFS+Didot & display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Cambo&display=swap');
-
+@import url('https://fonts.googleapis.com/css2? family= Monoton & display=swap');
+@import url('https://fonts.googleapis.com/css2? family= Zen+Tokyo+Zoo & display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
 *{
     padding: 0;
     margin: 0;
@@ -17,7 +20,7 @@ html body{
 
 .primo{
     display: block;
-    min-height: 50vh;
+    min-height: 75vh;
     width: 100%;
 }
 .container{
@@ -81,8 +84,167 @@ h1 span:nth-child(2){
     right: -159px;
     
 }
+.prenom {
+    position: absolute;
+    top: 150px;
+    left: 150px;
+    transition: transform 4.33s;
+}
+
+.moveLeft {
+    transform: translateX(-100px);
+}
+
+.moveRightPrenom {
+    transform: translateX(0);
+}
+
+.nom {
+    position: relative;
+    top: 50px;
+    left: 195px;
+    transition: transform 0.5s;
+}
+
+.moveRightNom {
+    transform: translateX(100px);
+}
+
+
 .slogan{
     position: absolute;
     top: 50px;
     margin-left: 50px;
 }
+.profession h1{
+    font-size: 140px;
+    margin-top: -100px;
+    font-family: 'Saira Stencil One', cursive;
+
+}
+
+.deuxio{
+    display: block;
+    min-height: 400vh;
+    width: 100%;
+    background-color: #eef0e6;
+}
+.deuxio > .container > .finished-work > p {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .deuxio > .container > .finished-work > p.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .deuxio > .container > .finished-work > p:nth-child(1) {
+    transition-delay: 0.57s;
+  }
+  
+  .deuxio > .container > .finished-work > p:nth-child(2) {
+    transition-delay: 0.4s;
+
+  }
+  
+  .deuxio > .container > .finished-work > p:nth-child(3) {
+    transition-delay: 0.6s;
+  }
+  
+  
+.deuxio .container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    width: 100%;
+    height: auto auto;
+   
+}
+.deuxio .container .finished-work{
+    display: block;
+    margin: 150px 0;
+    text-transform: uppercase;
+    line-height: 200px;
+}
+.deuxio .container .finished-work p{
+    font-size: 65px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-weight: 500;
+}
+.deuxio .container .finished-work p span{
+   font-size: 105px;
+   font-family: 'Abril Fatface', cursive;
+}
+.deuxio .container .finished-work p:nth-child(1){
+text-align: center;
+}
+.deuxio .container .finished-work p:nth-child(2){
+    position: relative;
+    left: -200px;
+    margin-left: -100px;
+}
+.deuxio .container .finished-work p:nth-child(3){
+    position: relative;
+    right: -290px;
+    margin-right: -100px;
+    
+}
+
+.working{
+    display: block;
+    width: 100%;
+    height: auto;
+}
+.wedding{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 1;
+    flex-wrap: wrap;
+}
+.wedding h1{
+    color: #000;
+    margin-left: -200px;
+}
+
+.wedding-pics{
+    display: flex;
+    position: absolute;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50rem;
+    
+   
+}
+.wedding-pics img{
+width: 44%;
+margin: 22px 15px;
+}
+.wedding-pics img:nth-child(1){
+    width: 700px;
+    position: relative;
+}
+.deuxio > .container > .working > .wedding > .wedding-pics > img {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.5s ease, transform 0.5s ease;
+  }
+  
+  .deuxio > .container > .working > .wedding > .wedding-pics  > img.show {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  
+  .deuxio > .container > .working > .wedding > .wedding-pics > img {
+    transition-delay: 1.025s;
+  }
+  .green-bg {
+    background-color: green;
+    transition: background-color 1s;
+}
+
+ 
